@@ -1,0 +1,24 @@
+
+Desarrollar un duelo entre pokemons. La dinámica general de la aplicación es la siguiente.
+
+    Selección de pokemons: Se trata del primer formulario de la aplicación. 
+    En él, el jugador debe elegir su equipo pokemon (formado por 4 pokemons). 
+    La elección se hará mediante checkboxes. Los pokemons a elegir se leen de 
+    un archivo .csv en el que se incluye información de los puntos de fuerza de cada pokemon, y su tipo. 
+    Todo este formulario se implementará en un primer script seleccion.php
+
+    Duelo pokemon: En este segundo formulario, se distribuyen aleatoriamente por un tablero 
+    (tabla HTML) los pokemons seleccionados por el jugador. Adicionalmente se distribuyen 4 pokemons 
+    seleccionados por la máquina. Para la realización de esta parte se podrá hacer uso de las 
+    funciones desarrolladas en el primer proyecto. En cada pokemon aparece su información de puntos y tipo.
+     Mediante dos columnas de 4 campos select cada una, se eligen las parejas de pokemon que se van a batir. 
+     Este script, llamado duelo.php mandará los datos del formulario a ganadores.php
+
+    Finalmente, en ganadores.php se mostrarán los resultados de las batallas y quién gana la partida, 
+    pudiendo resultar en la victoria del humano, de la máquina o un empate. Para decidir quién gana un 
+    duelo entre dos pokemons se deberá crear una función duelo, que recibirá como parámetro los arrays 
+    de los pokemons que se baten y, según un algoritmo que tiene en cuenta su tipo, y sus puntos de fuerza, 
+    se establecerá un ganador. 
+
+La información de victorias y derrotas máquina - usuario podrá ser grabada en un
+ archivo y consultada accediendo al script correspondiente.
